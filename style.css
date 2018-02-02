@@ -68,6 +68,17 @@ textarea {
     height:44vh;
     max-height: 358px; 
 }
+.page-template-about-page .panel-contact-image {
+    height: 230px;
+    width: 182px;
+}
+.page-template-about-page .hentry {
+display: flex;
+flex-direction: row;
+padding: 2em 1em;
+}
+
+
 .home .panel-content,
 .home .panel-image {
     height:131vh;
