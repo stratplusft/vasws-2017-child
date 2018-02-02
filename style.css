@@ -1,0 +1,467 @@
+@charset "UTF-8";
+/*!
+Theme Name: VASWS Twentyseventeen Child
+Theme URI: https://github.com/stratplusft/VASWS
+Author: Bill Dunnett
+Author URI: http://typhina.co.uk
+Description:  2017 Child Theme custom built for Voluntary Action South West Surrey
+Template: twentyseventeen
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: vasws-2017-child
+Tags:
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+vasws is a child of the twentyseventeen theme.
+
+
+*/
+
+/*--------------------------------------------------------------
+5.0 Typography
+--------------------------------------------------------------*/
+textarea {
+	color: #333;
+	font-family: "Nunito Sans","Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+/* Placeholder text color -- selectors need to be separate to work. */
+::-webkit-input-placeholder {
+	color: #333;
+	font-family: "Nunito Sans","Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+:-moz-placeholder {
+	color: #333;
+	font-family: "Nunito Sans","Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+::-moz-placeholder {
+	color: #333;
+	font-family: "Nunito Sans","Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+	opacity: 1;
+	/* Since FF19 lowers the opacity of the placeholder by default */
+}
+
+:-ms-input-placeholder {
+	color: #333;
+	font-family: "Nunito Sans","Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+/*--------------------------------------------------------------
+  Layout
+--------------------------------------------------------------*/
+
+.page-template-gallery-page .entry-content,
+.page-template-gallery-page .entry-header{
+    width: 100%;
+    text-align: center;
+}
+.page-template-gallery-page .wrap,
+.page-template-gallery-page #content .wrap .content-area {
+    max-width: 100%
+}
+.page-template-gallery-page .entry-panel-header,
+.page-template-gallery-page .panel-image{
+    height:44vh;
+    max-height: 358px; 
+}
+.home .panel-content,
+.home .panel-image {
+    height:131vh;
+    max-height: 475px; 
+    color: #fff;
+}
+.page-template-gallery-page .entry-panel-header h4 a,
+.home .panel-content .entry-header h2 {
+    font-size:1.6em;
+}
+.home .site-branding  {
+    position: absolute;
+    top: 0;
+}
+.has-header-image.twentyseventeen-front-page .custom-header,
+.has-header-video.twentyseventeen-front-page .custom-header,
+.has-header-image.home.blog .custom-header,
+.has-header-video.home.blog .custom-header {
+        height:220px;
+	height: 35vh;	
+}
+.page .panel-content .entry-title, 
+.page-title, 
+body.page:not(.twentyseventeen-front-page) .entry-title{
+        color: #FF35FF;     
+    }
+
+@media screen and (min-width:400px){
+    .home .panel-content .entry-header h2 {
+        font-size:2.2em;
+    }
+    /*
+    .home  .site-branding .site-branding-text h1 a {
+         color:#00F;
+    } */
+    
+    
+}
+@media screen and (min-width:768px){
+    .page-template-gallery-page .site-branding .wrap,
+    .home .site-branding .wrap {
+            max-width: 1630px;
+
+    }
+    body.page.page-template-gallery-page .entry-header .entry-title {
+    font-size: 40px;
+    font-size: 3.1rem;
+}
+    .home .site-branding p {
+        font-size: 1.6rem;
+    }
+    .home .site-branding h1 {
+        font-size: 2.4rem;
+        text-align: center;
+        margin-top: .5em;
+       
+    }
+    
+    .has-header-image.twentyseventeen-front-page .custom-header,
+    .has-header-video.twentyseventeen-front-page .custom-header,
+    .has-header-image.home.blog .custom-header,
+    .has-header-video.home.blog .custom-header {
+        height:300px;
+	height: 75vh;	
+}
+    
+    .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
+    .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
+    .admin-bar.home.blog.has-header-image .custom-header-media,
+    .admin-bar.home.blog.has-header-video .custom-header-media {
+		height: calc(100vh - 130px);
+	}
+    .home p.site-description{
+        position:relative;
+        bottom: -122px;
+    }
+    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media,
+    .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media{
+        height:283px;
+        
+    }
+    .page .panel-content .entry-title, 
+    .page-title, 
+    body.page:not(.twentyseventeen-front-page) 
+    .entry-title{
+        font-size: 22px;
+        font-size: 1.5rem;        
+    }
+    body.page:not(.twentyseventeen-front-page) .site-content-contain-side-image .single-featured-image-header,
+    body.page:not(.twentyseventeen-front-page) .site-content-contain-side-image .site-content {
+        width:50%;
+        float:right;       
+    }
+    /* body  .site-branding .site-branding-text h1 a {
+         color:#000;
+    } */
+    
+    
+}
+@media screen and (min-width:950px){
+    .page-template-gallery-page article,
+    .home article {
+        display: flex;
+    }
+    .page-template-gallery-page .entry-panel-header,
+    .page-template-gallery-page .panel-image,
+    .home .panel-content,
+    .home .panel-image {
+        width: 50%;
+        overflow: hidden;
+    }
+    .page-template-gallery-page .hentry:nth-child(even),
+    .home .hentry:nth-child(even) {
+        flex-flow:row wrap;
+    }
+   .page-template-gallery-page .hentry:nth-child(odd),
+    .home .hentry:nth-child(odd){
+        flex-flow:row-reverse wrap;
+    }
+    
+    .home .panel-content .entry-header h2 {
+        font-size:3.8em;        
+        color:#35ff90;
+    }
+    .page-template-gallery-page .entry-panel-header h4 a {
+        font-size:3.8em;
+        line-height: 5em;
+    } 
+    .home p.site-description{
+        position:relative;
+        bottom: -30vh;
+    }
+    .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media,
+    .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media{
+        height:234px;
+        
+    }
+    h2.widget-title{
+        font-size: 1.2em;
+    }
+    /*
+     body  .site-branding .site-branding-text h1 a {
+         color:#f0f;
+    } */
+    
+}
+@media screen and (min-width:1060px){
+    .home .panel-content .entry-header h2 {
+        font-size:2.4em;
+    }
+    
+    /*
+     body  .site-branding .site-branding-text h1 a {
+         color:#ff0;
+    } */
+    
+    
+}
+@media screen and (min-width:1200px){
+    
+    .home .panel-content .entry-header h2 {
+        font-size:2.8em;
+    }
+   
+    .home .site-branding h1 {
+        font-size: 3.4rem;
+    }
+    .home .site-branding p {
+        font-size: 2.8rem;
+    }
+    .home p.site-description{        
+        bottom: -12vh;
+    }
+    
+    /*
+    body  .site-branding .site-branding-text h1 a {
+         color:#234567;
+    } */
+    
+    
+    
+}
+@media screen and (min-width:1536px){
+    
+    .home p.site-description{        
+        bottom: -14vh;
+    }
+    /* body  .site-branding .site-branding-text h1 a {
+         color:#e3e3e3;
+    } */
+}
+
+ 
+ .background-fixed .panel-image {
+        background-attachment: scroll;
+        background-position-y: top;
+}
+.page-template-gallery-page .hentry:nth-child(2) .entry-panel-header,
+.home .hentry:first-child .panel-content {
+    background-color: #3535FF;
+}
+.page-template-gallery-page .hentry:nth-child(2) .entry-panel-header h4 a,
+.home .hentry:first-child .panel-content h2 {
+    color: #35ff90;
+}
+.page-template-gallery-page .hentry:nth-child(3) .entry-panel-header,
+.home .hentry:nth-child(2) .panel-content {
+    background-color: #FF359A;
+}
+.page-template-gallery-page .hentry:nth-child(3) .entry-panel-header h4 a,
+.home .hentry:nth-child(2) .panel-content h2 {
+    color: #FFFF35;
+}
+.page-template-gallery-page .hentry:nth-child(4) .entry-panel-header,
+.home .hentry:nth-child(3) .panel-content {
+    background-color: #21AB66;
+}
+.page-template-gallery-page .hentry:nth-child(4) .entry-panel-header h4 a,
+.home .hentry:nth-child(3) .panel-content h2 {
+    color: #ab5621;
+}
+.page-template-gallery-page .hentry:nth-child(5) .entry-panel-header,
+.home .hentry:nth-child(4) .panel-content {
+    background-color: #359AFF;
+}
+.page-template-gallery-page .hentry:nth-child(5) .entry-panel-header h4 a,
+.home .hentry:nth-child(4) .panel-content h2 {
+    color: #FFFF35;
+}
+.page-template-gallery-page .hentry:nth-child(6) .entry-panel-header,
+.home .hentry:nth-child(5) .panel-content {
+    background-color: #B2AB35;
+}
+.page-template-gallery-page .hentry:nth-child(6) .entry-panel-header h4 a,
+.home .hentry:nth-child(5) .panel-content h2 {
+    color: #7457AD;
+}
+.page-template-gallery-page .hentry:nth-child(7) .entry-panel-header,
+.home .hentry:nth-child(6) .panel-content {
+    background-color: #19C3FF;
+}
+.page-template-gallery-page .hentry:nth-child(7) .entry-panel-header h4 a,
+.home .hentry:nth-child(6) .panel-content h2 {
+    color: #FFFF35;
+}
+.page-template-gallery-page .hentry:nth-child(8) .entry-panel-header,
+.home .hentry:nth-child(7) .panel-content {
+    background-color: #FF359A;
+}
+.page-template-gallery-page .hentry:nth-child(8) .entry-panel-header h4 a,
+.home .hentry:nth-child(7) .panel-content h2 {
+    color: #FFFF35;
+}
+/*--------------------------------------------------------------
+10.0 Links
+--------------------------------------------------------------*/
+
+.panel-content a {
+	color: #fff;
+	 
+}
+
+.panel-content a:hover,
+.panel-content a:active {
+	color: #FFF519;
+}
+/* Hover effects */
+
+.entry-content a,
+.entry-summary a
+ {
+	-webkit-box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+	box-shadow: inset 0 -1px 0 rgba(255, 255, 255, 1);
+	-webkit-transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
+	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+/*--------------------------------------------------------------
+12.0 Navigation
+--------------------------------------------------------------*/
+
+.navigation-top {
+	background: #FFFF35;
+	border-bottom: 1px solid #eee;
+	border-top: 1px solid #eee;
+	font-size: 16px;
+	font-size: 1rem;
+	position: relative;
+}
+
+.navigation-top .wrap {
+	max-width: 1400px;
+	padding: 0;
+}
+
+.navigation-top a {
+	color: #2EB0FF;
+	font-weight: 600;
+	-webkit-transition: color 0.2s;
+	transition: color 0.2s;
+}
+
+.navigation-top .current-menu-item > a,
+.navigation-top .current_page_item > a {
+	color: #767676;
+}
+
+.main-navigation {
+	clear: both;
+	display: block;
+}
+
+.main-navigation ul {
+	background: #FFFF35;
+	list-style: none;
+	margin: 0;
+	padding: 0 1.5em;
+	text-align: left;
+}
+
+
+@media screen and (min-width:768px){
+    .main-navigation a {
+        font-size:.8rem;
+        padding: 1em 0em 1em 1.3em;
+    }
+    .main-navigation li {
+        margin-left: .5em;
+    }
+}
+@media screen and (min-width:1060px){
+    .main-navigation a {
+        font-size:1.1rem;
+        padding: 1em .5em;
+    }
+     .main-navigation li {
+        margin-left: 1em;
+    }
+    
+}
+@media screen and (min-width:1200px){
+    .navigation-top {
+	font-size: 44px;
+	font-size: 2.8rem;	
+    }
+     .main-navigation a {        
+        padding: 0 1em;
+    }
+     .main-navigation li {
+        margin-left: 0;
+    }
+    
+    
+}
+
+/*--------------------------------------------------------------
+13.1 Header
+--------------------------------------------------------------*/
+.entry-header h2,
+.custom-header .site-branding-text p.site-title a,
+.custom-header .site-branding-text h1 a,
+.custom-header .site-branding-text h1 {
+            font-family: "Roboto Slab", sans-serif;
+            font-weight: bold;
+    
+    }
+.custom-header .site-branding-text p {
+    font-weight: bold;
+    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+    
+}
+.entry-content p{
+    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+@media screen and (min-width:1200px){
+    .custom-header .site-branding-text h1 {
+            font-weight: bold;
+            font-size: 5.4rem;
+    
+    }
+      .custom-header .site-branding-text p.site-title a{
+        font-size: 2.3rem;
+    }  
+}
+@media screen and (min-width: 30em) {
+
+	/* Site Branding */
+
+	.site-branding {
+		padding: 2em 0 1em;
+	}
+}
+
+
+
+
