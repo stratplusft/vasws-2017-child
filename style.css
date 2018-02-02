@@ -172,6 +172,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     .home article {
         display: flex;
     }
+    .page-template-image-page article {
+        min-height: 540px;
+    }
     .page-template-gallery-page .entry-panel-header,
     .page-template-gallery-page .panel-image,
     .home .panel-content,
@@ -345,6 +348,19 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 	transition: color 80ms ease-in, -webkit-box-shadow 130ms ease-in-out;
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out;
 	transition: color 80ms ease-in, box-shadow 130ms ease-in-out, -webkit-box-shadow 130ms ease-in-out;
+}
+body.page:not(.twentyseventeen-front-page) .entry-content a
+ {
+	-webkit-box-shadow: inset 0 -1px 0 rgba(46, 176, 255, 1);
+	box-shadow: inset 0 -1px 0 rgba(46, 176, 255, 1);
+	
+}
+body.page:not(.twentyseventeen-front-page) .entry-content a:hover
+ {
+	color:rgba(46, 176, 255, .7);
+        -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
+	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
+	
 }
 /*--------------------------------------------------------------
 12.0 Navigation
