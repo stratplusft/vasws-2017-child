@@ -171,6 +171,27 @@
                     }
                 
                 ?>
+                <?php 
+                    if(get_field('photo-8')){
+                        $image = get_field('photo-8');
+                        echo '<article class="twentyseventeen-panel  page type-page status-publish has-post-thumbnail hentry">';
+                        echo '<div class="panel-contact-image" style="background-repeat:no-repeat; background-image: url( '?><?php echo $image['url']?><?php echo ' ">';
+                        echo '</div>';
+                        echo '<div class="entry-panel-header">'; 
+                        echo '<h4>' . get_field('name-8') . '</h4>';
+                         echo '<p>' . get_field('role-8') . '</p>';
+                        echo '<p>' . get_field('email-8') . '</p>';
+                        echo '<p>' . get_field('telephone-8') . '</p>';
+                       
+                        ?>
+                       
+                 <?php
+                        echo '</div>';
+                        echo '</article>';
+                        
+                    }
+                
+                ?>
                 
             </div> <!-- end flex-row-panel -->
             
