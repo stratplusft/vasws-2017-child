@@ -270,10 +270,10 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
         font-size: 3.4rem;
     }
     .home .site-branding p {
-        font-size: 2.8rem;
+        font-size: 2.4rem;
     }
     .home p.site-description{        
-        bottom: -12vh;
+        bottom: -41vh;
     }
     .page-template-about-page .flex-row-panel {    
         align-items: left;
@@ -499,13 +499,82 @@ body.page:not(.twentyseventeen-front-page) .entry-content a:hover
             font-weight: bold;
     
     }
+.custom-header .site-branding-text p.site-title a{
+    font-size: 1.2rem;
+}
+body.home .custom-header .site-branding-text h1.site-title {
+    font-size: 2rem;
+    text-align: center;
+}
+.custom-header p.site-description {
+    display: none;
+}
 .custom-header .site-branding-text p {
     font-weight: bold;
-    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
-    
+    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;    
+}
+.custom-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .entry-content p{
     font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+
+@media screen and (min-width:375px){
+    .custom-header .site-branding-text p.site-title a{
+        font-size: 1.55rem;
+    }
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 2.4rem;
+    }
+}
+@media screen and (min-width:414px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 2.8rem;
+    }
+}
+
+@media screen and (min-width:568px){
+    .custom-header .site-branding-text p.site-title a{
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width:586px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 2.5rem;
+}
+@media screen and (min-width:766px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 2.8rem;
+    }
+    .custom-header p.site-description {
+        display: block;
+    }
+    .wrap {
+        max-width: 100%;
+        padding-left: .5em;
+        padding-right: .5em;
+        }    
+}
+@media screen and (min-width:812px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 3.5rem;
+    }
+    
+}
+@media screen and (min-width:990px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 2.2rem;
+    }
+    .custom-header .site-branding-text p.site-title a{
+        font-size: 2.2rem;
+    }
+    .site-description {
+        font-size: 1.5rem;
+    }
+    
 }
 @media screen and (min-width:1200px){
     .custom-header .site-branding-text h1 {
@@ -517,12 +586,32 @@ body.page:not(.twentyseventeen-front-page) .entry-content a:hover
         font-size: 2.3rem;
     }  
 }
+@media screen and (min-width:1280px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 3rem;
+    }    
+    
+}
+@media screen and (min-width:1466px){
+    .custom-header .site-branding-text p.site-title a {
+        font-size: 3.6rem;
+    }
+    .site-description {
+        font-size: 1.6rem;
+    }    
+}
+@media screen and (min-width:1500px){
+    body.home .custom-header .site-branding-text h1.site-title {
+        font-size: 3.5rem;
+    }    
+    
+}
 @media screen and (min-width: 30em) {
 
 	/* Site Branding */
 
 	.site-branding {
-		padding: 2em 0 1em;
+		padding: 1em 0 1em;
 	}
 }
 
