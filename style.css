@@ -242,6 +242,10 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     h2.widget-title{
         font-size: 1.2em;
     }
+    .site-footer .widget-area {
+        padding: 2em 1em;
+    }
+    
     /*
      body  .site-branding .site-branding-text h1 a {
          color:#f0f;
