@@ -245,6 +245,11 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     .site-footer .widget-area {
         padding: 2em 1em;
     }
+    .page.page-one-column .entry-header, 
+    .twentyseventeen-front-page.page-one-column .entry-header, 
+    .archive.page-one-column:not(.has-sidebar) .page-header {
+    margin-bottom: .5em;
+    }
     
     /*
      body  .site-branding .site-branding-text h1 a {
