@@ -70,7 +70,9 @@ textarea {
 .page-template-gallery-page #content .wrap .content-area {
     max-width: 100%
 }
-.page-template-networks-page .entry-panel-header,
+.page-template-networks-page .entry-panel-header{
+    max-height: 358px; 
+}
 .page-template-networks-page .panel-image,
 .page-template-gallery-page .entry-panel-header,
 .page-template-gallery-page .panel-image{
@@ -78,7 +80,7 @@ textarea {
     max-height: 358px; 
 }
 .page-template-networks-page .entry-panel-header{
-    padding:3em;
+    padding:.5em;
 }
 .page-template-about-page .panel-contact-image {
     height: 230px;
@@ -106,8 +108,10 @@ textarea {
     max-height: 475px; 
     color: #fff;
 }
-.page-template-networks-page .entry-panel-header h4 a{
-    font-size:1.2em;
+.page-template-networks-page .entry-panel-header h4{
+    color: #fff;
+    font-size:1.1em;
+    font-weight: 400;
 }
 .page-template-gallery-page .entry-panel-header h4 a,
 .home .panel-content .entry-header h2 {
@@ -286,6 +290,10 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     .home .panel-content .entry-header h2 {
         font-size:2.4em;
     }
+    .page-template-networks-page .panel-image{
+        height:58vh;
+        max-height: 358px; 
+    }
     
     /*
      body  .site-branding .site-branding-text h1 a {
@@ -343,12 +351,12 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
         padding-left: 1.5em;
     }
 }
-
-
- 
  .background-fixed .panel-image {
         background-attachment: scroll;
         background-position-y: top;
+}
+.page-template-networks-page .hentry .panel-image {
+        display: none;
 }
 /* Gallery Page Colours */
 .page-template-gallery-page .hentry:nth-child(2) .entry-panel-header,
@@ -408,60 +416,46 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     color: #FFFF35;
 }
 /* Networks Page Colours */
-.page-template-networks-page .hentry:nth-child(2) .entry-panel-header,
-.home .hentry:first-child .panel-content {
+.page-template-networks-page .hentry:nth-child(2) .entry-panel-header{
     background-color: #3535FF;
 }
-.page-template-networks-page .hentry:nth-child(2) .entry-panel-header h4 a,
-.home .hentry:first-child .panel-content h2 {
-    color: #35ff90;
-}
-.page-template-networks-page .hentry:nth-child(3) .entry-panel-header,
-.home .hentry:nth-child(2) .panel-content {
-    background-color: #FF359A;
-}
-.page-template-networks-page .hentry:nth-child(3) .entry-panel-header h4 a,
-.home .hentry:nth-child(2) .panel-content h2 {
+.page-template-networks-page .hentry:nth-child(2) .entry-panel-header h4 a {
     color: #FFFF35;
 }
-.page-template-networks-page .hentry:nth-child(4) .entry-panel-header,
-.home .hentry:nth-child(3) .panel-content {
+.page-template-networks-page .hentry:nth-child(3) .entry-panel-header {
+    background-color: #FF359A;
+}
+.page-template-networks-page .hentry:nth-child(3) .entry-panel-header h4 a {
+    color: #FFFF35;
+}
+.page-template-networks-page .hentry:nth-child(4) .entry-panel-header {
     background-color: #21AB66;
 }
-.page-template-networks-page .hentry:nth-child(4) .entry-panel-header h4 a,
-.home .hentry:nth-child(3) .panel-content h2 {
-    color: #ab5621;
+.page-template-networks-page .hentry:nth-child(4) .entry-panel-header h4 a{
+    color: #FFFF35;
 }
-.page-template-networks-page .hentry:nth-child(5) .entry-panel-header,
-.home .hentry:nth-child(4) .panel-content {
+.page-template-networks-page .hentry:nth-child(5) .entry-panel-header{
     background-color: #359AFF;
 }
-.page-template-networks-page .hentry:nth-child(5) .entry-panel-header h4 a,
-.home .hentry:nth-child(4) .panel-content h2 {
+.page-template-networks-page .hentry:nth-child(5) .entry-panel-header h4 a {
     color: #FFFF35;
 }
-.page-template-networks-page .hentry:nth-child(6) .entry-panel-header,
-.home .hentry:nth-child(5) .panel-content {
+.page-template-networks-page .hentry:nth-child(6) .entry-panel-header{
     background-color: #B2AB35;
 }
-.page-template-networks-page .hentry:nth-child(6) .entry-panel-header h4 a,
-.home .hentry:nth-child(5) .panel-content h2 {
-    color: #7457AD;
-}
-.page-template-networks-page .hentry:nth-child(7) .entry-panel-header,
-.home .hentry:nth-child(6) .panel-content {
-    background-color: #19C3FF;
-}
-.page-template-networks-page .hentry:nth-child(7) .entry-panel-header h4 a,
-.home .hentry:nth-child(6) .panel-content h2 {
+.page-template-networks-page .hentry:nth-child(6) .entry-panel-header h4 a {
     color: #FFFF35;
 }
-.page-template-networks-page .hentry:nth-child(8) .entry-panel-header,
-.home .hentry:nth-child(7) .panel-content {
+.page-template-networks-page .hentry:nth-child(7) .entry-panel-header{
+    background-color: #19C3FF;
+}
+.page-template-networks-page .hentry:nth-child(7) .entry-panel-header h4 a {
+    color: #FFFF35;
+}
+.page-template-networks-page .hentry:nth-child(8) .entry-panel-header {
     background-color: #FF359A;
 }
-.page-template-networks-page .hentry:nth-child(8) .entry-panel-header h4 a,
-.home .hentry:nth-child(7) .panel-content h2 {
+.page-template-networks-page .hentry:nth-child(8) .entry-panel-header h4 a{
     color: #FFFF35;
 }
 /*--------------------------------------------------------------
@@ -500,6 +494,13 @@ body.page:not(.twentyseventeen-front-page) .entry-content a:hover
 	color:rgba(46, 176, 255, .7);
         -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
+	
+}
+
+body.page-template-networks-page .entry-content .entry-panel-header a:hover
+ {
+	color:rgba(255, 255, 255, .7);
+        
 	
 }
 /*--------------------------------------------------------------
@@ -553,6 +554,9 @@ body.page:not(.twentyseventeen-front-page) .entry-content a:hover
     }
     .main-navigation li {
         margin-left: .5em;
+    }
+    .page-template-networks-page .entry-panel-header{
+        padding:3em;
     }
 }
 @media screen and (min-width:1060px){
@@ -625,6 +629,10 @@ body.home .custom-header .site-branding-text h1.site-title {
 @media screen and (min-width:414px){
     body.home .custom-header .site-branding-text h1.site-title {
         font-size: 2.8rem;
+    }
+    .page-template-networks-page .hentry .panel-image {
+        display: block;
+        height: 58vh;
     }
 }
 
