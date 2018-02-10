@@ -626,7 +626,8 @@ body.home .custom-header .site-branding-text h1.site-title {
 }
 .custom-header .site-branding-text p {
     font-weight: bold;
-    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;    
+    font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif; 
+    text-align: center;
 }
 .custom-header {
     display: flex;
@@ -635,6 +636,9 @@ body.home .custom-header .site-branding-text h1.site-title {
 }
 .entry-content p{
     font-family: "Nunito Sans", "Libre Franklin", "Helvetica Neue", helvetica, arial, sans-serif;
+}
+.hide-mobile {
+    display: none;
 }
 
 @media screen and (min-width:375px){
@@ -684,14 +688,17 @@ body.home .custom-header .site-branding-text h1.site-title {
 @media screen and (min-width:586px){
     body.home .custom-header .site-branding-text h1.site-title {
         font-size: 2.5rem;
+    }
 }
 @media screen and (min-width:766px){
     body.home .custom-header .site-branding-text h1.site-title {
         font-size: 2.8rem;
     }
+    
     .custom-header p.site-description {
         display: block;
     }
+    
     .wrap {
         max-width: 100%;
         padding-left: .5em;
@@ -724,7 +731,10 @@ body.home .custom-header .site-branding-text h1.site-title {
     }
       .custom-header .site-branding-text p.site-title a{
         font-size: 2.3rem;
-    }  
+    } 
+    .hide-mobile{
+        display: block;
+    }
 }
 @media screen and (min-width:1280px){
     body.home .custom-header .site-branding-text h1.site-title {
@@ -745,8 +755,29 @@ body.home .custom-header .site-branding-text h1.site-title {
         font-size: 3.5rem;
     }   
 }
+
 @media screen and (min-width: 30em) {
 	.site-branding {
 		padding: 1em 0 1em;
 	}
+}
+@media screen and (min-width: 48em) {
+	.panel-content .wrap {
+            padding-bottom: 4.5em;
+            padding-top: 1em;
+        }
+        .home .entry-content {
+            font-size: 1.1rem;
+            margin: 0 1em 0 .5em;
+        }
+        strong {
+            font-size: 1.6rem;
+        }
+        ul, ol {
+
+            margin: 0 0 1.5em 1em;
+        }
+        .page-template-networks-page .entry-panel-header h4 {    
+            font-size: 1.4em; 
+        }
 }
