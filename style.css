@@ -516,7 +516,7 @@ body.page:not(.twentyseventeen-front-page) .entry-content a
 }
 body.page:not(.twentyseventeen-front-page) .entry-content a:hover
  {
-	color:rgba(255, 255, 255, .7);
+	color:rgba(46,176,255, .7);
         -webkit-box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
 	box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 1);
 	
