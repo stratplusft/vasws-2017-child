@@ -74,11 +74,14 @@ textarea {
     max-height: 358px; 
 }
 .page-template-networks-page .panel-image,
-.page-template-gallery-page .entry-panel-header,
 .page-template-gallery-page .panel-image{
     height:44vh;
     max-height: 358px; 
 }
+.page-template-gallery-page .entry-panel-header{
+    height:10vh;
+    max-height: 120px; 
+    }
 .page-template-networks-page .entry-panel-header{
     padding:.5em;
 }
@@ -156,6 +159,11 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     .home .panel-content .entry-header h2 {
         font-size:2.2em;
     }
+   
+    .page-template-gallery-page .entry-panel-header{
+        height:44vh;
+        max-height: 358px; 
+    }
     /*
     .home  .site-branding .site-branding-text h1 a {
          color:#00F;
@@ -205,7 +213,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 	}
     .home p.site-description{
         position:relative;
-        bottom: -122px;
+        bottom: 0;
     }
     .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media,
     .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media{
@@ -270,7 +278,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
         color:#35ff90;
     }
     .page-template-gallery-page .entry-panel-header h4 a {
-        font-size:3.8em;
+        font-size:2.8em;
         line-height: 5em;
     } 
     .page-template-networks-page .entry-panel-header h4 a {
@@ -279,7 +287,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     } 
     .home p.site-description{
         position:relative;
-        bottom: -30vh;
+        bottom: -2vh;
     }
     .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media,
     .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media{
@@ -333,7 +341,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
         font-size: 2.4rem;
     }
     .home p.site-description{        
-        bottom: -41vh;
+        bottom: 0;
     }
     .page-template-about-page .flex-row-panel {    
         align-items: left;
@@ -351,11 +359,9 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 @media screen and (min-width:1536px){
     
     .home p.site-description{        
-        bottom: -14vh;
+        bottom: -24px;
     }
-    /* body  .site-branding .site-branding-text h1 a {
-         color:#e3e3e3;
-    } */
+    
 }
 @media screen and (min-width:1836px){
     .page-template-about-page .entry-content .hentry {
