@@ -53,6 +53,7 @@ textarea {
 /*--------------------------------------------------------------
   Layout
 --------------------------------------------------------------*/
+.text-align-center,
 .page-template-about-page .entry-content,
 .page-template-about-page .entry-header,
 .page-template-networks-page .entry-content,
@@ -131,7 +132,22 @@ textarea {
         height:220px;
 	height: 35vh;	
 }
-@media screen and (max-height:400px){
+.flex-panel {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.flex-right,
+.flex-left{
+    text-align: left;
+    margin: 1em;
+    background: #FAF5E8;
+    padding: 1em;
+}
+@media screen and (max-height:400px), 
+screen and (max-width:400px){
     .has-header-image.twentyseventeen-front-page .custom-header {
         height: 229px;
         height: 69vh;
@@ -144,6 +160,7 @@ textarea {
     .panel-content .entry-header {
         margin-bottom: 0;
     }
+    .single-featured-image-header,
     .home .hentry .panel-image,
     .page-template-networks-page .hentry .panel-image {
         display: none;
@@ -203,29 +220,30 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
     .has-header-video.home.blog .custom-header {
         height:300px;
 	height: 75vh;	
-}
+    }
     
     .admin-bar.twentyseventeen-front-page.has-header-image .custom-header-media,
     .admin-bar.twentyseventeen-front-page.has-header-video .custom-header-media,
     .admin-bar.home.blog.has-header-image .custom-header-media,
     .admin-bar.home.blog.has-header-video .custom-header-media {
 		height: calc(100vh - 130px);
-	}
+    }
     .home p.site-description{
         position:relative;
         bottom: 0;
     }
     .has-header-image:not(.twentyseventeen-front-page):not(.home) .custom-header-media,
     .has-header-video:not(.twentyseventeen-front-page):not(.home) .custom-header-media{
-        height:283px;
-        
+        height:283px;        
     }
     .page .panel-content .entry-title, 
-    .page-title, 
-    body.page:not(.twentyseventeen-front-page) 
-    .entry-title{
-        font-size: 22px;
-        font-size: 1.5rem;        
+    .page-title{
+        font-size: 35px;
+        font-size: 2.2rem;      
+    }
+    body.page:not(.twentyseventeen-front-page) .entry-title{
+        font-size: 42px;
+        font-size: 2.6rem;      
     }
     body.page:not(.twentyseventeen-front-page) .site-content-contain-side-image .single-featured-image-header,
     body.page:not(.twentyseventeen-front-page) .site-content-contain-side-image .site-content {
@@ -486,10 +504,13 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 /*--------------------------------------------------------------
 10.0 Links
 --------------------------------------------------------------*/
-
+.entry-title a,
+a {
+	color: rgb(43, 96, 255);
+	text-decoration: none;
+}
 .panel-content a {
-	color: #fff;
-	 
+	color: #fff;	 
 }
 
 .panel-content a:hover,
@@ -497,7 +518,7 @@ body.page:not(.twentyseventeen-front-page) .entry-title{
 	color: #FFF519;
 }
 /* Hover effects */
-
+.entry-title a,
 .entry-content a,
 .entry-summary a
  {
@@ -768,6 +789,9 @@ body.home .custom-header .site-branding-text h1.site-title {
 	}
 }
 @media screen and (min-width: 48em) {
+        body.page:not(.twentyseventeen-front-page) {
+            font-size: 1.2rem;
+        }
 	.panel-content .wrap {
             padding-bottom: 4.5em;
             padding-top: 1em;
@@ -784,6 +808,16 @@ body.home .custom-header .site-branding-text h1.site-title {
             margin: 0 0 1.5em 1em;
         }
         .page-template-networks-page .entry-panel-header h4 {    
-            font-size: 1.4em; 
+            font-size: 1.1em; 
+        }
+        .site-content {
+            padding: .5em 0 0 .5em;
+        }
+        .single-post .entry-title {
+            font-weight: 700;
+        }
+        .blog .category-news,
+        .single-post .category-news {
+            color:#A7001D;
         }
 }

@@ -34,11 +34,14 @@
 							) );
 						?>
 					</nav><!-- .social-navigation -->
-				<?php endif;
-
+				<?php endif;?>
+                                
+			</div><!-- .wrap -->
+                        <div class="wrap text-align-center">
+                            <?php
 				get_template_part( 'template-parts/footer/site', 'info' );
 				?>
-			</div><!-- .wrap -->
+                        </div><!-- .wrap -->
 		</footer><!-- #colophon -->
 	</div><!-- .site-content-contain -->
 </div><!-- #page -->

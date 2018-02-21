@@ -18,6 +18,7 @@
 	</header><!-- .entry-header -->
 	<div class="entry-content">
 		<?php the_content(); ?>
+                
             <div class="flex-row-panel">
                 <?php 
                     if(get_field('photo-1')){
@@ -27,20 +28,16 @@
                         echo '</div>';
                         echo '<div class="entry-panel-header">'; 
                         echo '<h4>' . get_field('name-1') . '</h4>';
-                         echo '<p>' . get_field('role-1') . '</p>';
+                        echo '<p>' . get_field('role-1') . '</p>';
                         echo '<p>' . get_field('e-mail-1') . '</p>';
                         echo '<p>' . get_field('telephone-1') . '</p>';
-                       
                         ?>
-                       
                  <?php
                         echo '</div>';
                         echo '</article>';
-                        
                     }
-                
                 ?>
-            <?php 
+                <?php 
                     if(get_field('photo-2')){
                         $image = get_field('photo-2');
                         echo '<article class="twentyseventeen-panel  page type-page status-publish has-post-thumbnail hentry">';
@@ -182,6 +179,27 @@
                          echo '<p>' . get_field('role-8') . '</p>';
                         echo '<p>' . get_field('email-8') . '</p>';
                         echo '<p>' . get_field('telephone-8') . '</p>';
+                       
+                        ?>
+                       
+                 <?php
+                        echo '</div>';
+                        echo '</article>';
+                        
+                    }
+                
+                ?>
+                <?php 
+                    if(get_field('photo-9')){
+                        $image = get_field('photo-9');
+                        echo '<article class="twentyseventeen-panel  page type-page status-publish has-post-thumbnail hentry">';
+                        echo '<div class="panel-contact-image" style="background-repeat:no-repeat; background-image: url( '?><?php echo $image['url']?><?php echo ' ">';
+                        echo '</div>';
+                        echo '<div class="entry-panel-header">'; 
+                        echo '<h4>' . get_field('name-9') . '</h4>';
+                         echo '<p>' . get_field('role-9') . '</p>';
+                        echo '<p>' . get_field('email-9') . '</p>';
+                        echo '<p>' . get_field('telephone-9') . '</p>';
                        
                         ?>
                        
